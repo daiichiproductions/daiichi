@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 export const About: React.FC = () => {
@@ -20,7 +21,7 @@ export const About: React.FC = () => {
             <span className="text-white/40">VISUAL NARRATIVE</span>
           </h2>
           <p className="text-lg md:text-xl text-white/60 font-light leading-relaxed max-w-lg mb-12">
-            Daiichi is a collective of visionary directors, cinematographers, and digital artists dedicated to pushing the boundaries of what's possible in visual storytelling. We don't just capture moments; we architect experiences.
+            Daiichi is a collective of visionary directors, cinematographers, and digital artists dedicated to pushing the boundaries of what&apos;s possible in visual storytelling. We don&apos;t just capture moments; we architect experiences.
           </p>
           
           <div className="grid grid-cols-2 gap-8">
@@ -42,9 +43,11 @@ export const About: React.FC = () => {
           transition={{ duration: 1, delay: 0.2 }}
           className="relative group cursor-pointer overflow-hidden rounded-2xl"
         >
-          <img 
+          <Image 
             src="https://picsum.photos/seed/cinema/800/1000" 
             alt="Cinematic production" 
+            width={800}
+            height={1000}
             className="w-full h-auto grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
           />
           <div className="absolute inset-0 bg-blue-900/10 group-hover:bg-transparent transition-colors duration-700" />

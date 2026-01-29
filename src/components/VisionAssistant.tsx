@@ -74,7 +74,7 @@ export const VisionAssistant: React.FC = () => {
             >
               <h4 className="text-xs font-bold text-blue-400 uppercase tracking-widest mb-4">DAIICHI_CORE VISION_OUTPUT:</h4>
               <p className="text-lg font-light leading-relaxed italic text-white/90">
-                "{result}"
+                &ldquo;{result}&rdquo;
               </p>
             </motion.div>
           )}

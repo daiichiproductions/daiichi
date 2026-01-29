@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const projects = [
@@ -28,9 +29,11 @@ export const Showreel: React.FC = () => {
             className="flex-shrink-0 w-[85vw] md:w-[600px] group cursor-pointer"
           >
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl mb-6">
-              <img 
+              <Image 
                 src={project.img} 
-                alt={project.title} 
+                alt={project.title}
+                width={800}
+                height={600}
                 className="w-full h-full object-cover transition-transform duration-700 scale-110 group-hover:scale-100 grayscale hover:grayscale-0"
               />
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">

@@ -43,7 +43,7 @@ export const Services: React.FC = () => {
             <h2 className="text-5xl md:text-7xl font-syne font-bold">CORE EXPERTISE</h2>
           </div>
           <div className="max-w-xs text-white/40 text-sm leading-relaxed">
-            We provide an end-to-end creative pipeline, ensuring every frame aligns with your brand's unique DNA.
+            We provide an end-to-end creative pipeline, ensuring every frame aligns with your brand&apos;s unique DNA.
           </div>
         </div>
 
