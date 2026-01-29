@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Daiichi - Futuristic Cinema Studio
+
+A high-end, ultra-modern website for Daiichi, a premium video production and photography firm, featuring 3D visuals, cinematic motion, and AI-powered vision generation.
+
+Built with **Next.js 15** (App Router), React, TypeScript, Tailwind CSS, Framer Motion, and Three.js.
+
+## Features
+
+- 🎬 **Cinematic Design** - Ultra-modern, futuristic UI with smooth animations
+- 🎨 **3D Visuals** - Interactive Three.js particle systems
+- 🤖 **AI Vision Assistant** - Powered by Google Gemini for creative concept generation
+- 📱 **Responsive** - Fully responsive design for all devices
+- ⚡ **Performance** - Optimized with Next.js App Router
+
+## Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
 
 ## Getting Started
 
-First, run the development server:
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+2. **Set up environment variables:**
+   
+   Create a `.env.local` file in the root directory:
+   ```env
+   NEXT_PUBLIC_GEMINI_API_KEY=your_gemini_api_key_here
+   ```
+
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+
+## Project Structure
+
+```
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx      # Root layout with metadata
+│   │   ├── page.tsx        # Home page
+│   │   └── globals.css     # Global styles
+│   └── components/         # React components
+│       ├── About.tsx
+│       ├── CinemaShowcase.tsx
+│       ├── Contact.tsx
+│       ├── CustomCursor.tsx
+│       ├── Hero.tsx
+│       ├── Navbar.tsx
+│       ├── Services.tsx
+│       ├── Showreel.tsx
+│       └── VisionAssistant.tsx
+├── public/                 # Static assets
+├── types.ts               # TypeScript type definitions
+└── next.config.js         # Next.js configuration
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js 15** - React framework with App Router
+- **React 19** - UI library
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Utility-first CSS framework
+- **Framer Motion** - Animation library
+- **Three.js** - 3D graphics library
+- **@react-three/fiber** - React renderer for Three.js
+- **@react-three/drei** - Useful helpers for react-three-fiber
+- **Google Gemini AI** - AI-powered vision generation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Migration Notes
 
-## Learn More
+This project was migrated from Vite + React to Next.js 15 with App Router. Key changes:
 
-To learn more about Next.js, take a look at the following resources:
+- All components moved to `src/components/` with `'use client'` directives
+- App.tsx converted to `src/app/page.tsx`
+- Global styles moved to `src/app/globals.css`
+- Environment variables use `NEXT_PUBLIC_` prefix for client-side access
+- Routing handled automatically by Next.js App Router
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+© 2025 Daiichi Digital. All Rights Reserved.

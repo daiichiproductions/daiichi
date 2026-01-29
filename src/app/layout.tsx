@@ -1,20 +1,9 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import type { Metadata } from 'next';
+import './globals.css';
 
 export const metadata: Metadata = {
-  title: "Daiichi Productions - Coming Soon",
-  description: "A new era of video production is on the horizon. Stay tuned for cinematic excellence.",
+  title: 'Daiichi | The Future of Visual Storytelling',
+  description: 'A high-end, ultra-modern website for Daiichi, a premium video production and photography firm, featuring 3D visuals, cinematic motion, and AI-powered vision generation.',
 };
 
 export default function RootLayout({
@@ -24,11 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
